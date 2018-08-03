@@ -87,7 +87,7 @@ class DashboardModel extends CI_Model
 
 		
 		} catch (Exception $e) {
-			log_message('error createSociety()',$e->getMessage());
+			log_message('error',$e->getMessage());
 			return;
 		}
 		
@@ -109,7 +109,7 @@ class DashboardModel extends CI_Model
 				return false;
 			}
 		} catch (Exception $e) {
-			log_message('error addToMainAccoutsPrimary()',$e->getMessage());
+			log_message('error',$e->getMessage());
 			return;
 		}
 	}
@@ -129,7 +129,7 @@ class DashboardModel extends CI_Model
 					return false;
 				}
 			} catch (Exception $e) {
-				log_message('error subGroupPostings()',$e->getMessage());
+				log_message('error',$e->getMessage());
 				return;
 			}
 	}
@@ -185,7 +185,7 @@ class DashboardModel extends CI_Model
 			}
 				
 		} catch (Exception $e) {
-			log_message('error addLedgers()',$e->getMessage());
+			log_message('error',$e->getMessage());
 			return;
 		}
 	}
@@ -207,7 +207,7 @@ class DashboardModel extends CI_Model
 			}
 			
 		} catch (Exception $e) {
-			log_message('error getPrimaryId()',$e->getMessage());
+			log_message('error',$e->getMessage());
 			return;
 		}
 		return $ID;
@@ -230,7 +230,7 @@ class DashboardModel extends CI_Model
 			}
 			
 		} catch (Exception $e) {
-			log_message('error getSubgroupID()',$e->getMessage());
+			log_message('error',$e->getMessage());
 			return;
 		}
 		return $ID;
